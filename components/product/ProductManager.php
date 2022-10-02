@@ -19,6 +19,7 @@ class ProductManager
             $array_data[] = $product;
             return json_encode($array_data);
         } else {
+            mkdir('../product-data');
             $newData = array();
             $newData[] = (array)$product;
             return json_encode($newData);
